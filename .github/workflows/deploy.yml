@@ -16,6 +16,6 @@ jobs:
           key: ${{secrets.SSH_KEY}}
           script: |
             cd admin-sys
-            sudo git checkout main
-            sudo git pull
+            git checkout main
+            git pull
             pm2 reload project_express
