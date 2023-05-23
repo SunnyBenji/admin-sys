@@ -15,7 +15,7 @@ jobs:
           username: ${{secrets.SSH_USERNAME}}
           key: ${{secrets.SSH_KEY}}
           script: |
-            cd /admin-sys
+            cd admin-sys
             sudo git checkout main
             sudo git pull
             pm2 reload index.js
