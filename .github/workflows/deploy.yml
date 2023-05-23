@@ -9,13 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to DigitalOcean Droplet
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v0.1.2
         with:
           host: ${{secrets.SSH_HOST}}
           username: ${{secrets.SSH_USERNAME}}
           key: ${{secrets.SSH_KEY}}
           script: |
-            cd /express-website
+            cd /admin-sys
             sudo git checkout main
             sudo git pull
             pm2 reload index.js
