@@ -6,7 +6,7 @@ const app = express(); // Calls the method "express()" and assigns it's output t
 
 app.get("/", (req, res) => { // Creates sort of a listener for when there are "GET" requests to the "/" (root) path. Takes in req (request) and res (response)
 
-    res.send("Hello moi je restart!!!"); // For the response, send a string "Hello World!"
+    res.send("Nouveau!"); // For the response, send a string "Hello World!"
 
 });
 
