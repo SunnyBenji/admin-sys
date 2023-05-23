@@ -15,7 +15,7 @@ jobs:
           username: ${{secrets.SSH_USERNAME}}
           key: ${{secrets.SSH_KEY}}
           script: |
-            cd admin-sys
+            cd ~/admin-sys
             git pull git@github.com:SunnyBenji/admin-sys.git
             pm2 reload project_express
             echo "Deploy ok"
