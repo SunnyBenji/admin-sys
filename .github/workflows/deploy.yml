@@ -18,3 +18,4 @@ jobs:
             cd /express-website
             sudo git checkout main
             sudo git pull
+            pm2 reload index.js
